@@ -57,10 +57,11 @@ running **setup.sh** automates this installing process for the [**HP-Victus**](#
 
 Nvidia has issues with laptop sleeping on some models which can be fixed with putting the following <br>
 ```
-options nvidia NVreg_PreserveVideoMemoryAllocations=1
-options nvidia NVreg_TemporaryFilePath=/var/tmp
+NVreg_PreserveVideoMemoryAllocations=1
+NVreg_TemporaryFilePath=/var/tmp
 ```
-in **/etc/default/grub** or **/etc/modprobe.d** which solves the issue thanks to a smart guy on reddit i found
+in **/etc/default/grub** which solves the issue thanks to a smart guy on reddit i found
+you can also put it in a config file in **/etc/modprobe.d/** but with different syntax
 
 - [Hybernate-on-Nvidia-reddit](https://www.reddit.com/r/hyprland/comments/1cyb0h7/hibernate_on_nvidia/)
 - [Nvidia-Preserve-Video-Memmory-After-Suspend-archwiki](https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Preserve_video_memory_after_suspend)
