@@ -60,7 +60,7 @@ Nvidia has issues with laptop sleeping on some models which can be fixed with pu
 NVreg_PreserveVideoMemoryAllocations=1
 NVreg_TemporaryFilePath=/var/tmp
 ```
-in **/etc/default/grub** which solves the issue thanks to a smart guy on reddit i found
+in **/etc/default/grub** which solves the issue thanks to a smart guy on reddit i found <br>
 you can also put it in a config file in **/etc/modprobe.d/** but with different syntax
 
 - [Hybernate-on-Nvidia-reddit](https://www.reddit.com/r/hyprland/comments/1cyb0h7/hibernate_on_nvidia/)
